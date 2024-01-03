@@ -127,9 +127,9 @@ useEffect(() => {
   }
 
 
-  function Calculation(e) {
+  function Calculation(presentDay) {
     const parsedSalary = parseInt(g_salary);
-    const presentDays = parseInt(Present);
+    const presentDays = parseInt(presentDay);
     // console.log(presentDays);
     let calculatedSalary = 0;
     let leaveDays = 0;
@@ -195,13 +195,14 @@ useEffect(() => {
         <div>
           <label>No. of Present Days</label><br/>
           <input type="number" placeholder="Name" value={Present} onChange={(e) => {
+            Calculation(e.target.value);
             setPresent(e.target.value);
           }}/>
         </div>
 
         <div>
           <label>Leave Day</label><br/>
-          <input type="number" placeholder="Name" value={Leave} onFocus={Calculation()} onChange={(e) => {
+          <input type="number" placeholder="Name" value={Leave} onChange={(e) => {
 
             setLeave(e.target.value);
           }}/>
