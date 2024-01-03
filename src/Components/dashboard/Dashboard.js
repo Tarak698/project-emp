@@ -233,7 +233,7 @@ useEffect(() => {
         <div >
       <div style={{ background: "", width: "", padding: "20px" }}>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <h1>Office Attendance Sheet :</h1>
+          <h1>Employee Management System :</h1>
         </div>
         <div
           style={{
@@ -257,8 +257,8 @@ useEffect(() => {
             <p>{data.length}</p><br/>
             <button onClick={() => {
               setshow(true);
-            }}>🔗Add New Employee</button>
-            {/* <p>🔗Add New Employee</p> */}
+            }}>Add New Employee</button>
+            {/* <p>Add New Employee</p> */}
           </div>
           <div
             style={{
